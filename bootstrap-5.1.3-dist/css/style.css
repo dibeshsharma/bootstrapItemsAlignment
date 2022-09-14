@@ -1,0 +1,62 @@
+.parentDiv{
+    min-height: 100vh;
+}
+
+.childDiv{
+    min-height: 48vh; 
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0,0,0,.125); 
+    border-radius: 10px;
+    /* box-shadow: 5px 10px #888888;   */
+    background-color: #eeeeee88;
+    margin: 1vh;
+}
+
+.bi-globe{
+    font-size: 3rem;
+    color:green;
+}
+
+.spinner-error {
+    display: inline-block;
+    /* width: 2rem;
+    height: 2rem;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    border-radius: 50%; */
+    color:red;
+    opacity: 0;
+    -webkit-animation: 2s linear infinite spinner-error;
+    animation: 2s linear infinite spinner-error;
+}
+
+.containerB1 {
+  height: 100%;
+  position: relative;
+}
+
+.spinner-border{
+  width: 5rem;
+  height: 5rem;
+}
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* scss-docs-start spinner-error-keyframes */
+@keyframes spinner-error {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
